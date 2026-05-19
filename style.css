@@ -6,8 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #0f0f0f;
-  color: #f0f0f0;
+  background: #f8f8f8;
+  color: #111318;
 }
 
 /* --- NAVIGATION --- */
@@ -16,10 +16,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  background: #0f0f0f;
+  background: rgba(248, 248, 248, 0.9);
   position: sticky;
   top: 0;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #e5e5e5;
+  backdrop-filter: blur(12px);
+  z-index: 100;
 }
 
 .nav-logo {
@@ -35,30 +37,33 @@ nav {
 }
 
 .nav-links a {
-  color: #aaa;
+  color: #555;
   text-decoration: none;
   font-size: 0.95rem;
+  transition: color 0.2s;
 }
 
 .nav-links a:hover {
-  color: #f0f0f0;
+  color: #111;
 }
 
 /* --- HOME SECTION --- */
 #home {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0 20px;
+  max-width: none;
 }
 
 #home h1 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-  line-height: 1.2;
+  font-size: 3.8rem;
+  margin-bottom: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 .highlight {
@@ -66,10 +71,11 @@ nav {
 }
 
 #home p {
-  font-size: 1.2rem;
-  color: #aaa;
-  max-width: 500px;
+  font-size: 1.15rem;
+  color: #666;
+  max-width: 480px;
   margin-bottom: 40px;
+  line-height: 1.7;
 }
 
 .btn {
@@ -79,15 +85,18 @@ nav {
   border-radius: 8px;
   text-decoration: none;
   font-size: 1rem;
+  transition: background 0.2s, transform 0.1s;
+  display: inline-block;
 }
 
 .btn:hover {
   background: #4f46e5;
+  transform: translateY(-1px);
 }
 
 /* --- SEKTIONEN ALLGEMEIN --- */
 section {
-  padding: 100px 60px;
+  padding: 80px 60px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -95,47 +104,52 @@ section {
 section h2 {
   font-size: 2.2rem;
   margin-bottom: 12px;
+  letter-spacing: -0.01em;
 }
 
 .section-sub {
-  color: #aaa;
+  color: #888;
   margin-bottom: 48px;
   font-size: 1rem;
 }
 
-/* --- PROJEKTE --- */
-.projekt-grid {
+/* --- PROZESS --- */
+.prozess-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
-.projekt-card {
-  background: #1a1a1a;
-  border: 1px solid #2a2a2a;
+.prozess-schritt {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
-  padding: 32px;
+  padding: 28px;
+  transition: border-color 0.2s;
 }
 
-.projekt-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 12px;
+.prozess-schritt:hover {
+  border-color: #6366f1;
 }
 
-.projekt-card p {
-  color: #aaa;
-  margin-bottom: 24px;
-  line-height: 1.6;
-}
-
-.btn-small {
+.schritt-nummer {
+  font-size: 2rem;
+  font-weight: bold;
   color: #6366f1;
-  text-decoration: none;
-  font-size: 0.95rem;
+  margin-bottom: 14px;
+  opacity: 0.5;
 }
 
-.btn-small:hover {
-  text-decoration: underline;
+.prozess-schritt h3 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.prozess-schritt p {
+  color: #666;
+  line-height: 1.65;
+  font-size: 0.9rem;
 }
 
 /* --- PREISE --- */
@@ -146,18 +160,27 @@ section h2 {
 }
 
 .preis-card {
-  background: #1a1a1a;
-  border: 1px solid #2a2a2a;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
   padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   position: relative;
+  transition: border-color 0.2s;
+}
+
+.preis-card:hover {
+  border-color: #ccc;
 }
 
 .highlight-card {
   border-color: #6366f1;
+}
+
+.highlight-card:hover {
+  border-color: #818cf8;
 }
 
 .badge {
@@ -172,15 +195,20 @@ section h2 {
 }
 
 .preis {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  color: #f0f0f0;
+  color: #111;
 }
 
 .preis span {
   font-size: 1rem;
-  color: #aaa;
+  color: #888;
   font-weight: normal;
+}
+
+.preis-card h3 {
+  font-size: 1.1rem;
+  color: #333;
 }
 
 .preis-card ul {
@@ -188,8 +216,9 @@ section h2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #aaa;
+  color: #555;
   flex: 1;
+  font-size: 0.95rem;
 }
 
 .preis-card ul li::before {
@@ -199,26 +228,26 @@ section h2 {
 
 /* --- KONTAKT --- */
 .kontakt-box {
-  background: #1a1a1a;
-  border: 1px solid #2a2a2a;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
-  padding: 48px;
+  padding: 56px 48px;
   text-align: center;
   max-width: 600px;
 }
 
 .kontakt-box p {
-  color: #aaa;
+  color: #555;
   margin-bottom: 32px;
   line-height: 1.7;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 /* --- FOOTER --- */
 footer {
   text-align: center;
   padding: 40px;
-  color: #555;
-  border-top: 1px solid #1a1a1a;
-  font-size: 0.9rem;
+  color: #999;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.85rem;
 }

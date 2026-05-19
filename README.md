@@ -1,20 +1,24 @@
 # 03-portfolio
 
-Persönliche Portfolio-Website für Freelance-Webentwicklung.
+Portfolio-Website für Freelance-Webentwicklung. Zielgruppe: lokale KMU (Friseure, Praxen, Restaurants).
 
-**Live:** (kommt nach GitHub Pages Deployment)
+**Live:** [umitwebdev.github.io/03-portfolio](https://umitwebdev.github.io/03-portfolio)
 
 ## Features
-- One-Page-Layout mit Smooth-Scroll Navigation
-- Projektübersicht mit Live-Links
-- Transparente Preisübersicht mit 3 Paketen
-- Kontaktbereich mit direktem Mail-Link
+- Hero-Sektion mit CTA-Button
+- Prozess-Sektion ("So arbeite ich") mit 4-Schritt-Karten (CSS Grid)
+- Preissektion mit 3 Paketen (Starter, Professional, Wartung)
+- Kontakt-Sektion mit E-Mail-Link
+- Sticky Navigation mit Blur-Effekt
+- Helles, professionelles Design (Illumina-inspiriert)
 
 ## Tech-Stack
 - HTML5
-- CSS3 (Grid, Flexbox)
+- CSS3 (Grid, Flexbox, Transitions)
 - Vanilla JavaScript
 
 ## Setup
 git clone https://github.com/umitwebdev/03-portfolio.git
 cd 03-portfolio
+
+Dann index.html im Browser öffnen oder via Live Server starten.
