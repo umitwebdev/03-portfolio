@@ -8,7 +8,7 @@ Portfolio-Website für Freelance-Webentwicklung. Zielgruppe: lokale KMU (Friseur
 - Hero-Sektion mit CTA-Button
 - Prozess-Sektion ("So arbeite ich") mit 4-Schritt-Karten (CSS Grid)
 - Preissektion mit 3 Paketen (Starter, Professional, Wartung)
-- Kontaktformular mit Validierung und Bestätigungsmeldung (Vanilla JS)
+- Kontaktformular mit clientseitiger Validierung, Bestätigungsmeldung und Auto-Reset (Vanilla JS)
 - Sticky Navigation mit Blur-Effekt
 - Helles, professionelles Design
 - Mobile-optimiert (Responsive Design mit Media Queries)
@@ -16,7 +16,7 @@ Portfolio-Website für Freelance-Webentwicklung. Zielgruppe: lokale KMU (Friseur
 ## Tech-Stack
 - HTML5
 - CSS3 (Grid, Flexbox, Transitions)
-- Vanilla JavaScript (DOM-Manipulation, Formular-Validierung)
+- Vanilla JavaScript (DOM-Manipulation, Formular-Validierung, `event.preventDefault()`)
 
 ## Setup
 git clone https://github.com/umitwebdev/03-portfolio.git
