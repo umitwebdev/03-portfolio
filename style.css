@@ -111,7 +111,7 @@ section h2 {
 }
 
 .section-sub {
-  color: #888;
+  color: #666;
   margin-bottom: 48px;
   font-size: 1rem;
 }
@@ -150,7 +150,7 @@ section h2 {
 }
 
 .prozess-schritt p {
-  color: #666;
+  color: #555;
   line-height: 1.65;
   font-size: 0.9rem;
 }

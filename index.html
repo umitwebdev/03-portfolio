@@ -1,14 +1,16 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ümit – Webentwickler</title>
+  <link rel="icon" href="favicon.ico">
+  <!-- FIX 3: Meta Description für SEO -->
+  <meta name="description" content="Ich baue moderne Websites für kleine Unternehmen – schnell, günstig, unkompliziert. Kostenlose Erstberatung.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
   <nav>
     <div class="nav-logo">ümit.dev</div>
     <ul class="nav-links">
@@ -19,102 +21,104 @@
     </ul>
   </nav>
 
-  <!-- HOME -->
-  <section id="home">
-    <h1>Websites die <span class="highlight">verkaufen</span>.</h1>
-    <p>Ich baue moderne Websites für kleine Unternehmen – schnell, günstig, unkompliziert.</p>
-    <a href="#kontakt" class="btn">Jetzt anfragen</a>
-  </section>
+  <!-- FIX 2: <main> Landmark für Screenreader -->
+  <main>
 
-  <!-- PROZESS -->
-  <section id="prozesse">
-    <h2>So arbeite ich</h2>
-    <p class="section-sub">Klar, transparent, ohne Überraschungen</p>
-    <div class="prozess-grid">
-      <div class="prozess-schritt">
-        <div class="schritt-nummer">01</div>
-        <h3>Erstgespräch</h3>
-        <p>Wir sprechen 20 Minuten über dein Unternehmen und was du brauchst. Kostenlos, unverbindlich.</p>
-      </div>
-      <div class="prozess-schritt">
-        <div class="schritt-nummer">02</div>
-        <h3>Entwurf</h3>
-        <p>Du bekommst einen ersten Entwurf innerhalb von 3 Tagen. Kein Geld bevor du zufrieden bist.</p>
-      </div>
-      <div class="prozess-schritt">
-        <div class="schritt-nummer">03</div>
-        <h3>Umsetzung</h3>
-        <p>Ich baue die Website. Du gibst Feedback. Wir passen an bis es passt.</p>
-      </div>
-      <div class="prozess-schritt">
-        <div class="schritt-nummer">04</div>
-        <h3>Launch</h3>
-        <p>Deine Website geht live. Ich zeige dir wie du Texte und Bilder selbst ändern kannst.</p>
-      </div>
-    </div>
-  </section>
+    <section id="home">
+      <h1>Websites die <span class="highlight">verkaufen</span>.</h1>
+      <p>Ich baue moderne Websites für kleine Unternehmen – schnell, günstig, unkompliziert.</p>
+      <a href="#kontakt" class="btn">Jetzt anfragen</a>
+    </section>
 
-  <!-- PREISE -->
-  <section id="preise">
-    <h2>Preise</h2>
-    <p class="section-sub">Transparent – keine versteckten Kosten</p>
-    <div class="preis-grid">
-      <div class="preis-card">
-        <h3>Starter</h3>
-        <div class="preis">499 €</div>
-        <ul>
-          <li>Bis zu 4 Seiten</li>
-          <li>Mobil-optimiert</li>
-          <li>Kontaktformular</li>
-          <li>2 Wochen Lieferzeit</li>
-        </ul>
-        <a href="#kontakt" class="btn">Anfragen</a>
+    <section id="prozesse">
+      <h2>So arbeite ich</h2>
+      <p class="section-sub">Klar, transparent, ohne Überraschungen</p>
+      <div class="prozess-grid">
+        <div class="prozess-schritt">
+          <div class="schritt-nummer">01</div>
+          <h3>Erstgespräch</h3>
+          <p>Wir sprechen 20 Minuten über dein Unternehmen und was du brauchst. Kostenlos, unverbindlich.</p>
+        </div>
+        <div class="prozess-schritt">
+          <div class="schritt-nummer">02</div>
+          <h3>Entwurf</h3>
+          <p>Du bekommst einen ersten Entwurf innerhalb von 3 Tagen. Kein Geld bevor du zufrieden bist.</p>
+        </div>
+        <div class="prozess-schritt">
+          <div class="schritt-nummer">03</div>
+          <h3>Umsetzung</h3>
+          <p>Ich baue die Website. Du gibst Feedback. Wir passen an bis es passt.</p>
+        </div>
+        <div class="prozess-schritt">
+          <div class="schritt-nummer">04</div>
+          <h3>Launch</h3>
+          <p>Deine Website geht live. Ich zeige dir wie du Texte und Bilder selbst ändern kannst.</p>
+        </div>
       </div>
-      <div class="preis-card highlight-card">
-        <div class="badge">Beliebt</div>
-        <h3>Professional</h3>
-        <div class="preis">899 €</div>
-        <ul>
-          <li>Bis zu 8 Seiten</li>
-          <li>SEO-Grundoptimierung</li>
-          <li>Google Maps Integration</li>
-          <li>3 Wochen Lieferzeit</li>
-        </ul>
-        <a href="#kontakt" class="btn">Anfragen</a>
-      </div>
-      <div class="preis-card">
-        <h3>Wartung</h3>
-        <div class="preis">39 € <span>/Monat</span></div>
-        <ul>
-          <li>Texte & Bilder ändern</li>
-          <li>Technische Updates</li>
-          <li>Reaktionszeit 48h</li>
-          <li>Monatlich kündbar</li>
-        </ul>
-        <a href="#kontakt" class="btn">Anfragen</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- KONTAKT -->
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p class="section-sub">Schreib mir – ich antworte innerhalb von 24 Stunden</p>
-    <div class="kontakt-box">
-      <form class="kontakt-form" id="kontakt-form">
-        <input type="text" id="name" placeholder="Dein Name" />
-        <input type="email" id="email" placeholder="Deine E-Mail" />
-        <textarea id="nachricht" placeholder="Deine Nachricht" rows="5"></textarea>
-        <button type="submit" class="btn">Nachricht senden</button>
-        <p id="formular-meldung"></p>
-      </form>
-    </div>
-  </section>
+    <section id="preise">
+      <h2>Preise</h2>
+      <p class="section-sub">Transparent – keine versteckten Kosten</p>
+      <div class="preis-grid">
+        <div class="preis-card">
+          <h3>Starter</h3>
+          <div class="preis">499 €</div>
+          <ul>
+            <li>Bis zu 4 Seiten</li>
+            <li>Mobil-optimiert</li>
+            <li>Kontaktformular</li>
+            <li>2 Wochen Lieferzeit</li>
+          </ul>
+          <a href="#kontakt" class="btn">Anfragen</a>
+        </div>
+        <div class="preis-card highlight-card">
+          <div class="badge">Beliebt</div>
+          <h3>Professional</h3>
+          <div class="preis">899 €</div>
+          <ul>
+            <li>Bis zu 8 Seiten</li>
+            <li>SEO-Grundoptimierung</li>
+            <li>Google Maps Integration</li>
+            <li>3 Wochen Lieferzeit</li>
+          </ul>
+          <a href="#kontakt" class="btn">Anfragen</a>
+        </div>
+        <div class="preis-card">
+          <h3>Wartung</h3>
+          <div class="preis">39 € <span>/Monat</span></div>
+          <ul>
+            <li>Texte & Bilder ändern</li>
+            <li>Technische Updates</li>
+            <li>Reaktionszeit 48h</li>
+            <li>Monatlich kündbar</li>
+          </ul>
+          <a href="#kontakt" class="btn">Anfragen</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p class="section-sub">Schreib mir – ich antworte innerhalb von 24 Stunden</p>
+      <div class="kontakt-box">
+        <form class="kontakt-form" id="kontakt-form">
+          <input type="text" id="name" placeholder="Dein Name" />
+          <input type="email" id="email" placeholder="Deine E-Mail" />
+          <textarea id="nachricht" placeholder="Deine Nachricht" rows="5"></textarea>
+          <button type="submit" class="btn">Nachricht senden</button>
+          <p id="formular-meldung"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <!-- ENDE main -->
+
   <footer>
     <p>© 2026 ümit.dev · Alle Rechte vorbehalten</p>
   </footer>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
