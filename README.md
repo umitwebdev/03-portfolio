@@ -10,7 +10,8 @@ Portfolio-Website für Freelance-Webentwicklung. Zielgruppe: lokale KMU (Friseur
 - Preissektion mit 3 Paketen (Starter, Professional, Wartung)
 - Kontakt-Sektion mit E-Mail-Link
 - Sticky Navigation mit Blur-Effekt
-- Helles, professionelles Design (Illumina-inspiriert)
+- Helles, professionelles Design
+- Mobile-optimiert (Responsive Design mit Media Queries)
 
 ## Tech-Stack
 - HTML5

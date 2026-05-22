@@ -26,33 +26,33 @@
     <a href="#kontakt" class="btn">Jetzt anfragen</a>
   </section>
 
- <!-- PROZESS -->
-<section id="projekte">
-  <h2>So arbeite ich</h2>
-  <p class="section-sub">Klar, transparent, ohne Überraschungen</p>
-  <div class="prozess-grid">
-    <div class="prozess-schritt">
-      <div class="schritt-nummer">01</div>
-      <h3>Erstgespräch</h3>
-      <p>Wir sprechen 20 Minuten über dein Unternehmen und was du brauchst. Kostenlos, unverbindlich.</p>
+  <!-- PROZESS -->
+  <section id="projekte">
+    <h2>So arbeite ich</h2>
+    <p class="section-sub">Klar, transparent, ohne Überraschungen</p>
+    <div class="prozess-grid">
+      <div class="prozess-schritt">
+        <div class="schritt-nummer">01</div>
+        <h3>Erstgespräch</h3>
+        <p>Wir sprechen 20 Minuten über dein Unternehmen und was du brauchst. Kostenlos, unverbindlich.</p>
+      </div>
+      <div class="prozess-schritt">
+        <div class="schritt-nummer">02</div>
+        <h3>Entwurf</h3>
+        <p>Du bekommst einen ersten Entwurf innerhalb von 3 Tagen. Kein Geld bevor du zufrieden bist.</p>
+      </div>
+      <div class="prozess-schritt">
+        <div class="schritt-nummer">03</div>
+        <h3>Umsetzung</h3>
+        <p>Ich baue die Website. Du gibst Feedback. Wir passen an bis es passt.</p>
+      </div>
+      <div class="prozess-schritt">
+        <div class="schritt-nummer">04</div>
+        <h3>Launch</h3>
+        <p>Deine Website geht live. Ich zeige dir wie du Texte und Bilder selbst ändern kannst.</p>
+      </div>
     </div>
-    <div class="prozess-schritt">
-      <div class="schritt-nummer">02</div>
-      <h3>Entwurf</h3>
-      <p>Du bekommst einen ersten Entwurf innerhalb von 3 Tagen. Kein Geld bevor du zufrieden bist.</p>
-    </div>
-    <div class="prozess-schritt">
-      <div class="schritt-nummer">03</div>
-      <h3>Umsetzung</h3>
-      <p>Ich baue die Website. Du gibst Feedback. Wir passen an bis es passt.</p>
-    </div>
-    <div class="prozess-schritt">
-      <div class="schritt-nummer">04</div>
-      <h3>Launch</h3>
-      <p>Deine Website geht live. Ich zeige dir wie du Texte und Bilder selbst ändern kannst.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- PREISE -->
   <section id="preise">
@@ -101,8 +101,12 @@
     <h2>Kontakt</h2>
     <p class="section-sub">Schreib mir – ich antworte innerhalb von 24 Stunden</p>
     <div class="kontakt-box">
-      <p>Du hast eine Idee oder willst wissen was eine Website für dein Unternehmen kosten würde?</p>
-      <a href="mailto:deine@email.de" class="btn">E-Mail schreiben</a>
+      <form class="kontakt-form">
+        <input type="text" id="name" placeholder="Dein Name" />
+        <input type="email" id="email" placeholder="Deine E-Mail" />
+        <textarea id="nachricht" placeholder="Deine Nachricht" rows="5"></textarea>
+        <button type="submit" class="btn">Nachricht senden</button>
+      </form>
     </div>
   </section>
 
@@ -111,6 +115,5 @@
     <p>© 2026 ümit.dev · Alle Rechte vorbehalten</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
